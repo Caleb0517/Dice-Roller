@@ -1,0 +1,82 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#container {
+    width: 100%;
+    max-width: 300px;
+    min-height: 400px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}   
+button {
+    margin-top: 10px;
+    border: 1px solid transparent;
+    outline: none;
+    background-color: #323232;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    margin-bottom: 10px;
+
+}
+
+button:hover {
+    background-color: #272727;
+    border-color: #dcdcdc;
+}
+
+button:active {
+    background-color: #000000;
+    border-color: #ffffff;
+}
+
+#container input {
+    padding: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.468);
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 90px;
+}
+
+#diceImages img {
+    margin: 5px;
+    max-height: 80px;
+}
+
+/* Add media query for smaller screens */
+@media (max-width: 600px) {
+    #container {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Add media query for larger PC screens */
+@media (min-width: 1200px) {
+    #container {
+        width: 50%;
+        max-width: 600px;
+    }
+}
